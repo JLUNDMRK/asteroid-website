@@ -32,65 +32,62 @@
         retain ownership of your data. The app does not sell your personal data.
       </p>
 
-      <h2>1. Google Drive access and local cache</h2>
+      <h2>1. Local storage and file access</h2>
       <p>
-        Asteroid lets you choose an audiobook folder in your own Google Drive using Google&apos;s file
-        picker. The app indexes and reads only the Drive files and folders you explicitly select.
+        To support playback, offline listening, and restoring app state, Asteroid stores cached files on
+        your device in storage areas provided by Android for the app. This may include downloaded audiobook
+        files, metadata, cover images, playback progress, bookmarks, and related app data.
       </p>
       <p>
-        To make playback reliable and reduce network usage, Asteroid may download and cache audiobook
-        files, metadata, cover images, playback progress, bookmarks, and related app data locally on your
-        device. This local cache is used by the app for playback, offline access, and restoring app state.
+        This data stays on your device unless you choose to use optional Google Drive backup (see below).
+        Asteroid does not upload your audiobook files to our servers.
       </p>
+
+      <h2>2. Google Drive</h2>
       <p>
-        Asteroid stores its local cache and app data in storage areas provided by Android for the app. The
-        app does not scan your device for audiobook files outside the locations you choose.
+        You sign in with Google and pick a Drive folder for your library, or use optional cloud backup in a
+        private app-data area on your own Drive account. Asteroid may access folders you explicitly select
+        using Google&apos;s file picker. The app indexes, reads, and plays media only from folders you
+        choose. File contents and folder indexes are not collected or sent to our servers.
       </p>
-      <p>
-        Asteroid does not upload your audiobook files to our servers. We do not operate a server that
-        receives, stores, or redistributes your audiobook library.
-      </p>
-      <p>When you sign in with Google, the app requests limited Drive access:</p>
+      <p><strong>Technical:</strong></p>
       <ul>
         <li><strong>drive.file</strong> — read and download files only inside folders you pick.</li>
-        <li><strong>drive.appdata</strong> — optional backup of listening progress, bookmarks, and metadata JSON in your private app-data folder on your Drive account.</li>
+        <li><strong>drive.appdata</strong> — optional backup of listening progress, bookmarks, and metadata JSON in your private app-data folder.</li>
       </ul>
       <p>
         Credentials and tokens stay on your device and are sent only to Google&apos;s official APIs. We do
         not receive your Google credentials or file contents on our own servers.
       </p>
 
-      <h2>2. Public metadata lookups</h2>
+      <h2>3. Public metadata lookups</h2>
       <p>
-        During library scan, Asteroid may query public services such as Open Library (and Google Books in
-        some builds) using book title and author text derived from your selected Drive folders and tags. Queries are
-        anonymous and do not include personal identifiers beyond what is required for a network request
-        (such as your IP address).
+        During library scan, Asteroid may query public services such as Open Library using book title and
+        author text derived from your folders and tags. Queries are anonymous and do not include personal
+        identifiers beyond what is required for a network request (such as your IP address).
       </p>
 
-      <h2>3. Crash reporting</h2>
+      <h2>4. Crash reporting</h2>
       <p>
         Anonymous crash reports may be sent via Google Firebase Crashlytics to improve stability. Reports
         can include device model, OS version, and stack traces. They are not used for advertising.
       </p>
 
-      <h2>4. In-app contributions (tip jar)</h2>
+      <h2>5. In-app contributions (tip jar)</h2>
       <p>
         Optional Supporter Status is handled through Google Play Billing. Payment processing is performed
         by Google; we do not receive your payment card details.
       </p>
 
-      <h2>5. Children&apos;s privacy</h2>
+      <h2>6. Children&apos;s privacy</h2>
       <p>
         The app does not knowingly collect personal information from children. It is designed to work with
         files and accounts you control.
       </p>
 
-      <h2>6. Contact</h2>
+      <h2>7. Contact</h2>
       <p>
         Questions about this policy: <a href="mailto:asteroid@jlundmark.org">asteroid@jlundmark.org</a>
-        or an issue on the
-        <a href="https://github.com/JLUNDMRK/audioplayer" target="_blank" rel="noopener noreferrer">GitHub repository</a>.
       </p>
     </main>
 
