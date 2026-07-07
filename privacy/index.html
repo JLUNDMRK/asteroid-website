@@ -25,72 +25,93 @@
 
     <main class="doc">
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: June 27, 2026</p>
+      <p class="updated">Last updated: July 7, 2026</p>
 
       <p>
-        Asteroid Audiobook Player is an ad-free hobby project. We respect your privacy and believe you should
-        retain ownership of your data. Asteroid does not run any servers. We do not operate a backend that
-        receives, stores, or redistributes your audiobook library. Your data lives only on your device and in
-        the Google Drive areas you choose. The app does not sell your personal data.
+        Asteroid Audiobook Player is an ad-free hobby project. We respect your privacy and believe you
+        should retain ownership of your data. Asteroid does not run any servers and does not collect
+        personal information, account data, or the titles of your audiobooks. Your library stays on
+        your device and in the cloud folders you choose. The app does not sell your personal data.
       </p>
 
-      <h2>1. Local storage and file access</h2>
+      <h2>1. Local storage on your device</h2>
       <p>
-        To support playback, offline listening, and restoring app state, Asteroid stores cached files on
-        your device in storage areas provided by Android for the app. This may include downloaded audiobook
-        files, metadata, cover images, playback progress, bookmarks, and related app data.
+        To support playback, offline listening, and restoring app state, Asteroid stores cached files
+        on your device in storage areas provided by Android for the app. This may include downloaded
+        audiobook files, metadata, cover images, playback progress, bookmarks, and related app data.
       </p>
       <p>
-        This data stays on your device unless you choose to use optional Google Drive backup (see below).
-        Nothing is sent to Asteroid—there is no Asteroid backend to receive it.
+        This data stays on your device unless you use optional cloud backup in your own cloud account
+        (see below). Nothing is sent to Asteroid—there is no Asteroid backend to receive it.
       </p>
 
-      <h2>2. Google Drive</h2>
+      <h2>2. Cloud library (Google Drive)</h2>
       <p>
-        You sign in with Google and pick a Drive folder for your library, or use optional cloud backup in a
-        private app-data area on your own Drive account. Asteroid may access folders you explicitly select
-        using Google&apos;s file picker. The app indexes, reads, and plays media only from folders you
-        choose. File contents and folder indexes are not sent to Asteroid—there are no Asteroid servers to
-        receive them.
+        Asteroid is built around a cloud audiobook library. Today this means Google Drive: you sign in
+        with Google and pick a Drive folder for your library using Google&apos;s file picker. The app
+        indexes, reads, and downloads only the files and folders you select. Additional cloud providers
+        may be supported in the future.
       </p>
-      <p><strong>Technical:</strong></p>
+      <p>
+        Audio, metadata, cover images, playback progress, and bookmarks may be downloaded and cached on
+        your device for playback and offline use. Asteroid does not scan your device for audiobook files
+        outside the cloud locations you choose.
+      </p>
+      <p><strong>Technical (Google Drive):</strong></p>
       <ul>
         <li><strong>drive.file</strong> — read and download files only inside folders you pick.</li>
-        <li><strong>drive.appdata</strong> — optional backup of listening progress, bookmarks, and metadata JSON in your private app-data folder.</li>
+        <li><strong>drive.appdata</strong> — optional backup of listening progress, bookmarks, and metadata JSON in your private app-data folder on your own Drive account.</li>
       </ul>
       <p>
-        Credentials and tokens stay on your device and are sent only to Google&apos;s official APIs. They are
-        never sent to an Asteroid server—Asteroid does not operate one.
+        Credentials and tokens stay on your device and are sent only to Google&apos;s official APIs. They
+        are never sent to an Asteroid server—Asteroid does not operate one.
       </p>
 
-      <h2>3. Public metadata lookups</h2>
+      <h2>3. Open Library and other metadata services</h2>
       <p>
-        During library scan, Asteroid may query public services such as Open Library using book title and
-        author text derived from your folders and tags. Queries are anonymous and do not include personal
-        identifiers beyond what is required for a network request (such as your IP address).
+        During library scan, Asteroid matches your selected folders to public book records using
+        <a href="https://openlibrary.org/" rel="noopener noreferrer">Open Library</a>. Queries are sent
+        as anonymous title and author text derived from your folder names and ID3 tags—they do not
+        include your name, email, or Google account. Like any network request, Open Library&apos;s API
+        may see your IP address.
+      </p>
+      <p>
+        Metadata and cover references returned by Open Library are stored in your local index on your
+        device so the app does not repeat the same lookups every time you browse. You are responsible
+        for using Open Library data in accordance with
+        <a href="https://openlibrary.org/help/faq" rel="noopener noreferrer">Open Library&apos;s terms and policies</a>.
+      </p>
+      <p>
+        When Open Library does not provide a confident match, the app may optionally query Google Books
+        (where enabled). Use of Google Books data must comply with
+        <a href="https://developers.google.com/books/terms" rel="noopener noreferrer">Google Books API terms</a>.
       </p>
 
-      <h2>4. Crash reporting</h2>
+      <h2>4. Analytics and crash reporting</h2>
       <p>
-        Anonymous crash reports may be sent via Google Firebase Crashlytics to improve stability. Reports
-        can include device model, OS version, and stack traces. They are not used for advertising.
+        To keep the app stable, anonymous crash reports and usage statistics may be sent via Google
+        Firebase Crashlytics and Firebase Analytics—for example aggregated listening time, approximate
+        library size, and non-fatal file read errors. Reports can include device model and OS version.
+        This data cannot be linked to you, is not used for advertising, and is never sold.
       </p>
 
-      <h2>5. In-app contributions (tip jar)</h2>
+      <h2>5. Supporter contributions (Google Play)</h2>
       <p>
-        Optional Supporter Status is handled through Google Play Billing. Payment processing is performed
-        by Google; we do not receive your payment card details.
+        Optional Supporter Status is handled through Google Play Billing (monthly supporter subscription
+        and/or one-time supporter contribution). Payment processing is performed by Google; we do not
+        receive your payment card details.
       </p>
 
       <h2>6. Children&apos;s privacy</h2>
       <p>
-        The app does not knowingly collect personal information from children. It is designed to work with
-        files and accounts you control.
+        The app does not knowingly collect personal information from children. It is designed to work
+        with files and accounts you control.
       </p>
 
       <h2>7. Contact</h2>
       <p>
-        Questions about this policy: <a href="mailto:asteroid@jlundmark.org">asteroid@jlundmark.org</a>
+        Questions about this policy:
+        <a href="mailto:asteroid@jlundmark.org">asteroid@jlundmark.org</a>
       </p>
     </main>
 
