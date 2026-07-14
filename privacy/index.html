@@ -25,7 +25,7 @@
 
     <main class="doc">
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: July 7, 2026</p>
+      <p class="updated">Last updated: July 15, 2026</p>
 
       <p>
         Asteroid Audiobook Player is an ad-free hobby project. We respect your privacy and believe you
@@ -45,26 +45,21 @@
         (see below). Nothing is sent to Asteroid—there is no Asteroid backend to receive it.
       </p>
 
-      <h2>2. Cloud library (Google Drive)</h2>
+      <h2>2. Cloud library</h2>
       <p>
-        Asteroid is built around a cloud audiobook library. Today this means Google Drive: you sign in
-        with Google and pick a Drive folder for your library using Google&apos;s file picker. The app
-        indexes, reads, and downloads only the files and folders you select. Additional cloud providers
-        may be supported in the future.
+        Asteroid is built around a cloud audiobook library. You connect a cloud storage account
+        (such as Dropbox or OneDrive) and choose a folder for your library. The app indexes, reads,
+        and downloads only the files and folders you select. Additional cloud providers may be
+        supported in the future.
       </p>
       <p>
         Audio, metadata, cover images, playback progress, and bookmarks may be downloaded and cached on
         your device for playback and offline use. Asteroid does not scan your device for audiobook files
         outside the cloud locations you choose.
       </p>
-      <p><strong>Technical (Google Drive):</strong></p>
-      <ul>
-        <li><strong>drive.file</strong> — read and download files only inside folders you pick.</li>
-        <li><strong>drive.appdata</strong> — optional backup of listening progress, bookmarks, and metadata JSON in your private app-data folder on your own Drive account.</li>
-      </ul>
       <p>
-        Credentials and tokens stay on your device and are sent only to Google&apos;s official APIs. They
-        are never sent to an Asteroid server—Asteroid does not operate one.
+        Credentials and tokens stay on your device and are sent only to your cloud provider&apos;s
+        official APIs. They are never sent to an Asteroid server—Asteroid does not operate one.
       </p>
 
       <h2>3. Open Library and other metadata services</h2>
@@ -72,7 +67,7 @@
         During library scan, Asteroid matches your selected folders to public book records using
         <a href="https://openlibrary.org/" rel="noopener noreferrer">Open Library</a>. Queries are sent
         as anonymous title and author text derived from your folder names and ID3 tags—they do not
-        include your name, email, or Google account. Like any network request, Open Library&apos;s API
+        include your name, email, or cloud account. Like any network request, Open Library&apos;s API
         may see your IP address.
       </p>
       <p>
