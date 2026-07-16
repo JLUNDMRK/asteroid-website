@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Known issues for Asteroid closed beta — not linked from the public site navigation.">
+  <title>Known issues (beta) — Asteroid Audiobook Player</title>
+  <link rel="icon" href="/assets/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="brand" href="/">
+        <img class="brand-mark" src="/assets/logo.png" alt="" width="40" height="40">
+        <span class="brand-name">Asteroid</span>
+      </a>
+      <!-- Intentionally no How to / public nav links — beta testers open this URL from the app. -->
+    </header>
+
+    <main class="doc">
+      <h1>Known issues (closed beta)</h1>
+      <p class="updated">
+        Unlisted page for beta testers. Update this list as issues are fixed.
+        Last updated: July 16, 2026
+      </p>
+
+      <p class="note">
+        This page is not linked from the public home, How to, Privacy, or Terms pages.
+        Prefer reporting new bugs to <a href="mailto:asteroid@jlundmark.org">asteroid@jlundmark.org</a>.
+      </p>
+
+      <h2>Current notes</h2>
+      <ul>
+        <li>
+          <strong>English only</strong> in the first closed beta UI.
+        </li>
+        <li>
+          <strong>Google Drive as audiobook library</strong> is disabled in this release
+          (Dropbox / OneDrive / on-device). Optional Google sign-in is for progress/bookmark sync (Drive app data).
+        </li>
+        <li>
+          <strong>Large first-time libraries</strong> can take a long time to index/scan/resolve.
+          Keep the app usable (foreground or playing) during the first Index pass when possible.
+        </li>
+        <li>
+          <strong>Metadata matching</strong> depends on folder names and tags; some books need a manual
+          Author/Title edit + resolve.
+        </li>
+        <li>
+          <strong>Rough edges expected</strong> — please report crashes with version/build from Settings → About.
+        </li>
+      </ul>
+
+      <h2>Recently addressed (may still need a Play update)</h2>
+      <ul>
+        <li>Latest Played: finished books stay on the list; list refresh is less jumpy during playback.</li>
+        <li>Advertising ID declaration aligned with Firebase Analytics (see Privacy Policy).</li>
+      </ul>
+
+      <h2>How to report</h2>
+      <p>
+        Email <a href="mailto:asteroid@jlundmark.org">asteroid@jlundmark.org</a> with:
+        what you did, what you expected, what happened, device model, Android version, and app version/build.
+      </p>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; 2026 Johan Lundmark. Asteroid Audiobook Player.</span>
+      <span>Beta testers only</span>
+    </footer>
+  </div>
+</body>
+</html>

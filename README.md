@@ -5,6 +5,9 @@ Static site for [asteroid.jlundmark.org](https://asteroid.jlundmark.org), hosted
 | URL | Page |
 |-----|------|
 | `/` | Landing page (logo + Play link when live) |
+| `/howto/` | Online how-to manual (screenshots) |
+| `/howto/troubleshooting/` | Troubleshooting |
+| `/known-issues/` | Closed-beta known issues (**unlisted** — open from the app only) |
 | `/privacy/` | Privacy policy (Google Play) |
 | `/terms/` | Terms of service |
 

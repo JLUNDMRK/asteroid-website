@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Troubleshooting Asteroid Audiobook Player — library, playback, sync, and metadata.">
+  <title>Troubleshooting — Asteroid Audiobook Player</title>
+  <link rel="icon" href="/assets/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="brand" href="/">
+        <img class="brand-mark" src="/assets/logo.png" alt="" width="40" height="40">
+        <span class="brand-name">Asteroid</span>
+      </a>
+      <nav class="site-nav" aria-label="Site">
+        <a href="/howto/">How to</a>
+        <a href="/howto/troubleshooting/">Troubleshooting</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+      </nav>
+    </header>
+
+    <main class="doc">
+      <h1>Troubleshooting</h1>
+      <p class="updated">Quick checks for common issues. Last updated: July 16, 2026</p>
+
+      <dl class="faq">
+        <dt>No books after I pick a folder</dt>
+        <dd>
+          Confirm you chose the folder that actually contains audiobook folders (not an empty parent).
+          Stay on a network, open <strong>Status</strong>, and wait for Index to finish. Then pull to refresh Browse.
+        </dd>
+
+        <dt>Books appear but covers or titles look wrong</dt>
+        <dd>
+          Prefer folders named <code>Author - Title</code> and clean ID3 tags. Open the book, edit Author/Title if needed,
+          then resolve again. Unmatched books can appear under Browse → Unresolved.
+        </dd>
+
+        <dt>Play waits a long time / never starts</dt>
+        <dd>
+          The current track must download (or be cached). Check network and Status for download errors.
+          Try another track, or pause other heavy downloads. Low storage can also block downloads.
+        </dd>
+
+        <dt>Sound stops when I leave the app</dt>
+        <dd>
+          Keep media playback notification permission allowed on Android 13+.
+          Check battery optimization is not killing the player for Asteroid.
+        </dd>
+
+        <dt>I lost my place in the book</dt>
+        <dd>
+          Open <strong>Listening History</strong> (clock icon) and restore an earlier position.
+          Cross-device progress needs cloud sync enabled and a Google account for Drive app data when you use that feature.
+        </dd>
+
+        <dt>Cloud sign-in fails (Dropbox / OneDrive / Google sync)</dt>
+        <dd>
+          Use a normal network (not a captive portal). Sign out and sign in again.
+          For OneDrive, the Azure app registration must include the signature hash for your install type (debug vs Play).
+        </dd>
+
+        <dt>Sync / progress does not update on another phone</dt>
+        <dd>
+          Enable progress sync under Settings, stay signed in to Google for app-data sync, and wait after pause
+          (writes are debounced). Pull Latest Played or reopen the book on the other device.
+        </dd>
+
+        <dt>App feels stuck indexing</dt>
+        <dd>
+          Indexing prefers the app in the foreground (or while playing). Check Status for stalls or sign-in issues.
+          Pause and resume from Status, or leave the app open on Wi‑Fi for a while.
+        </dd>
+      </dl>
+
+      <p class="note">
+        Still stuck? Mail <a href="mailto:asteroid@jlundmark.org">asteroid@jlundmark.org</a>
+        with your app version (Settings → About) and a short description of what you tried.
+      </p>
+
+      <p><a href="/howto/">← Back to How to</a></p>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; 2026 Johan Lundmark. Asteroid Audiobook Player.</span>
+      <span><a href="/howto/">How to</a> &middot; <a href="/">Home</a></span>
+    </footer>
+  </div>
+</body>
+</html>
