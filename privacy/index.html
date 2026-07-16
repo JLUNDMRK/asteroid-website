@@ -25,55 +25,60 @@
 
     <main class="doc">
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: July 15, 2026</p>
+      <p class="updated">Last updated: July 16, 2026</p>
 
       <p>
-        Asteroid Audiobook Player is an ad-free hobby project. We respect your privacy and believe you
-        should retain ownership of your data. Asteroid does not run any servers and does not collect
-        personal information, account data, or the titles of your audiobooks. Your library stays on
-        your device and in the cloud folders you choose. The app does not sell your personal data.
+        Asteroid Audiobook Player is an ad-free hobby project. Asteroid does not run any servers and does
+        not operate a backend that receives, stores, or redistributes your audiobook library. Your audio
+        files live on your device and in the cloud folders you choose with your cloud data provider
+        (for example Dropbox or OneDrive). Optional sync of progress and bookmarks may use Google Drive
+        App Data when you enable that feature. The app does not sell your personal data.
       </p>
 
-      <h2>1. Local storage on your device</h2>
+      <h2>1. Local storage &amp; library access</h2>
       <p>
-        To support playback, offline listening, and restoring app state, Asteroid stores cached files
-        on your device in storage areas provided by Android for the app. This may include downloaded
-        audiobook files, metadata, cover images, playback progress, bookmarks, and related app data.
+        Asteroid indexes and plays audiobooks from library folders you select under Settings. Audiobook
+        <em>file contents</em> are processed locally for playback and tagging. To support offline listening
+        and restoring app state, the app may cache downloaded audio, metadata, cover images, playback
+        progress, bookmarks, and related app data on your device.
       </p>
       <p>
-        This data stays on your device unless you use optional cloud backup in your own cloud account
-        (see below). Nothing is sent to Asteroid—there is no Asteroid backend to receive it.
-      </p>
-
-      <h2>2. Cloud library</h2>
-      <p>
-        Asteroid is built around a cloud audiobook library. You connect a cloud storage account
-        (such as Dropbox or OneDrive) and choose a folder for your library. The app indexes, reads,
-        and downloads only the files and folders you select. Additional cloud providers may be
-        supported in the future.
-      </p>
-      <p>
-        Audio, metadata, cover images, playback progress, and bookmarks may be downloaded and cached on
-        your device for playback and offline use. Asteroid does not scan your device for audiobook files
-        outside the cloud locations you choose.
-      </p>
-      <p>
-        Credentials and tokens stay on your device and are sent only to your cloud provider&apos;s
-        official APIs. They are never sent to an Asteroid server—Asteroid does not operate one.
+        Asteroid does not send file contents to Asteroid—there are no Asteroid servers to receive them.
       </p>
 
-      <h2>3. Open Library and other metadata services</h2>
+      <h2>2. Cloud storage &amp; optional Google sync</h2>
       <p>
-        During library scan, Asteroid matches your selected folders to public book records using
-        <a href="https://openlibrary.org/" rel="noopener noreferrer">Open Library</a>. Queries are sent
-        as anonymous title and author text derived from your folder names and ID3 tags—they do not
-        include your name, email, or cloud account. Like any network request, Open Library&apos;s API
-        may see your IP address.
+        You may connect cloud providers such as Dropbox or OneDrive for your audiobook library. Those
+        services use their own sign-in flows; credentials stay on your device and are sent only to that
+        provider&apos;s official APIs—never to an Asteroid server.
       </p>
       <p>
-        Metadata and cover references returned by Open Library are stored in your local index on your
-        device so the app does not repeat the same lookups every time you browse. You are responsible
-        for using Open Library data in accordance with
+        Optional cross-device sync of listening progress and bookmarks may use Google Sign-In with limited
+        Drive scopes, in particular <strong>drive.appdata</strong> (hidden app data for sync JSON).
+        Credentials and tokens for Google stay on the device and are passed only to Google&apos;s APIs.
+      </p>
+
+      <h2>3. Book metadata lookup (Open Library)</h2>
+      <p>
+        Asteroid analyzes audiobook folder names, file names, and embedded media metadata locally to
+        identify possible book titles, authors, and identifiers. When metadata lookup runs (Resolve),
+        selected search terms may be sent directly from the device to third-party metadata providers,
+        such as
+        <a href="https://openlibrary.org/" rel="noopener noreferrer">Open Library</a>,
+        to retrieve matching book information and cover artwork.
+      </p>
+      <p>
+        Asteroid does not send audiobook file contents, cloud-storage credentials, your name or email,
+        or a single dump of your entire library index to the developer&apos;s servers (there are none).
+        Lookups go from your device to the metadata provider. That provider may receive technical
+        information normally associated with an internet request, including the device&apos;s IP address,
+        request time, and each search query. Over time, many queries from the same IP could suggest which
+        titles were looked up. That is not the same as knowing your identity, but it is not fully anonymous.
+      </p>
+      <p>
+        Metadata and cover references returned by Open Library are stored in your local index so the app
+        does not repeat the same lookups every time you browse. You are responsible for using Open Library
+        data in accordance with
         <a href="https://openlibrary.org/help/faq" rel="noopener noreferrer">Open Library&apos;s terms and policies</a>.
       </p>
       <p>
@@ -84,10 +89,10 @@
 
       <h2>4. Analytics and crash reporting</h2>
       <p>
-        To keep the app stable, anonymous crash reports and usage statistics may be sent via Google
-        Firebase Crashlytics and Firebase Analytics—for example aggregated listening time, approximate
-        library size, and non-fatal file read errors. Reports can include device model and OS version.
-        This data cannot be linked to you, is not used for advertising, and is never sold.
+        To keep the app stable, anonymous crash reports and aggregated usage statistics may be sent via
+        Google Firebase Crashlytics and Firebase Analytics—for example device model, OS version, stack
+        traces, aggregated listening time, and approximate library size. These reports do not include
+        audiobook titles or your library contents. They are not used for advertising and are never sold.
       </p>
 
       <h2>5. Supporter contributions (Google Play)</h2>
@@ -100,7 +105,7 @@
       <h2>6. Children&apos;s privacy</h2>
       <p>
         The app does not knowingly collect personal information from children. It is designed to work
-        with files and accounts you control.
+        with files and accounts you control. Metadata lookups and crash reporting work as described above.
       </p>
 
       <h2>7. Contact</h2>
