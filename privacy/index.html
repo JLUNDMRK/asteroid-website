@@ -55,6 +55,7 @@
       <p>
         Optional cross-device sync of listening progress and bookmarks may use Google Sign-In with limited
         Drive scopes, in particular <strong>drive.appdata</strong> (hidden app data for sync JSON).
+        The app does not request <strong>drive.file</strong> or full Drive access for the audiobook library.
         Credentials and tokens for Google stay on the device and are passed only to Google&apos;s APIs.
       </p>
 
@@ -92,7 +93,13 @@
         To keep the app stable, anonymous crash reports and aggregated usage statistics may be sent via
         Google Firebase Crashlytics and Firebase Analytics—for example device model, OS version, stack
         traces, aggregated listening time, and approximate library size. These reports do not include
-        audiobook titles or your library contents. They are not used for advertising and are never sold.
+        audiobook titles or your library contents. They are never sold.
+      </p>
+      <p>
+        Firebase Analytics may use the device Advertising ID so Google can measure app performance,
+        usage, and related analytics (for example install attribution). Asteroid does not show ads,
+        does not use the Advertising ID to sell advertising, and does not sell that identifier or
+        analytics data to third parties for advertising.
       </p>
 
       <h2>5. Supporter contributions (Google Play)</h2>
