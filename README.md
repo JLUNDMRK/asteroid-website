@@ -56,3 +56,9 @@ In `index.html`, replace the &quot;Coming soon&quot; badge with the Play Store l
 Update the Android app `project_docs_url` to:
 
 `https://asteroid.jlundmark.org/privacy/`
+
+## Remote policy
+
+`/policy.v1.json` — signed remote control for the Asteroid app (killswitch, min version, announcements).
+Signed with the HMAC embedded in the app (`RemotePolicySecrets`). Ops: see AsteroidAudiobookPlayerKMP `docs/KILL_SWITCH_RUNBOOK.md`.
+
