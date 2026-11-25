@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "issued_at": "2026-11-25T20:00:00Z",
+  "ttl_seconds": 86400,
+  "policy": {
+    "messages": {
+      "settings_hint": {
+        "sv": "Asteroid är tillfälligt otillgänglig. Försök igen senare.",
+        "en": "Asteroid is temporarily unavailable. Please try again later."
+      }
+    },
+    "announcements": [
+      {
+        "id": "asteroid-free-beta-2026-11",
+        "display": "until_ack",
+        "title": {
+          "sv": "Gratis medan betan växer",
+          "en": "Free while we grow the beta"
+        },
+        "body": {
+          "sv": "Asteroid är gratis just nu. Senare kan jag be om ett engångsbidrag — jag är tydlig innan det ändras.",
+          "en": "Asteroid is free for now. Later I may ask for a one-time contribution — I’ll be clear before that changes."
+        },
+        "cta_label": {
+          "sv": "OK",
+          "en": "OK"
+        }
+      }
+    ]
+  },
+  "signature": "3YiNHZJkbLCrqswmaRvapZflCcco7oppDaoHFE7/KGk="
+}
